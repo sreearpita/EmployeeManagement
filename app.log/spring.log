@@ -1,0 +1,233 @@
+2020-09-18 00:00:04.772  INFO 21436 --- [main] c.s.s.Session5AssignmentApplication      : Starting Session5AssignmentApplication on LTIN144888 with PID 21436 (C:\Users\765282\Documents\workspace-spring-tool-suite-4-4.7.0.RELEASE\Session5Assignment\target\classes started by 765282 in C:\Users\765282\Documents\workspace-spring-tool-suite-4-4.7.0.RELEASE\Session5Assignment)
+2020-09-18 00:00:04.826  INFO 21436 --- [main] c.s.s.Session5AssignmentApplication      : No active profile set, falling back to default profiles: default
+2020-09-18 00:00:06.145  INFO 21436 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-18 00:00:06.254  INFO 21436 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 95ms. Found 3 JPA repository interfaces.
+2020-09-18 00:00:07.201  INFO 21436 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-09-18 00:00:07.216  INFO 21436 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-18 00:00:07.217  INFO 21436 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-18 00:00:07.420  INFO 21436 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-18 00:00:07.421  INFO 21436 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2476 ms
+2020-09-18 00:00:07.937  INFO 21436 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-18 00:00:08.043  INFO 21436 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-09-18 00:00:08.135  INFO 21436 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.20.Final
+2020-09-18 00:00:08.410  INFO 21436 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-09-18 00:00:08.580  INFO 21436 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-09-18 00:00:09.867  INFO 21436 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-09-18 00:00:09.896  INFO 21436 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-09-18 00:00:11.765  WARN 21436 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+    alter table employee_table_address 
+       add constraint FKjxiulhad5ycgpvw0tfp3jr9d4 
+       foreign key (address_address_id) 
+       references employee_address (address_id)" via JDBC Statement
+
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
+    alter table employee_table_address 
+       add constraint FKjxiulhad5ycgpvw0tfp3jr9d4 
+       foreign key (address_address_id) 
+       references employee_address (address_id)" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.4.20.Final.jar:5.4.20.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:559) [hibernate-core-5.4.20.Final.jar:5.4.20.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:504) [hibernate-core-5.4.20.Final.jar:5.4.20.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applyForeignKeys(AbstractSchemaMigrator.java:433) [hibernate-core-5.4.20.Final.jar:5.4.20.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:249) [hibernate-core-5.4.20.Final.jar:5.4.20.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:114) [hibernate-core-5.4.20.Final.jar:5.4.20.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:184) [hibernate-core-5.4.20.Final.jar:5.4.20.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73) [hibernate-core-5.4.20.Final.jar:5.4.20.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:316) [hibernate-core-5.4.20.Final.jar:5.4.20.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:469) [hibernate-core-5.4.20.Final.jar:5.4.20.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1259) [hibernate-core-5.4.20.Final.jar:5.4.20.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) [spring-orm-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) [spring-orm-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391) [spring-orm-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at java.util.concurrent.FutureTask.run(Unknown Source) ~[na:1.8.0_192]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) ~[na:1.8.0_192]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) ~[na:1.8.0_192]
+	at java.lang.Thread.run(Unknown Source) ~[na:1.8.0_192]
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`sys`.`#sql-1ac0_150`, CONSTRAINT `FKjxiulhad5ycgpvw0tfp3jr9d4` FOREIGN KEY (`address_address_id`) REFERENCES `employee_address` (`address_id`))
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117) ~[mysql-connector-java-8.0.21.jar:8.0.21]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.21.jar:8.0.21]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.21.jar:8.0.21]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764) ~[mysql-connector-java-8.0.21.jar:8.0.21]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648) ~[mysql-connector-java-8.0.21.jar:8.0.21]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95) ~[HikariCP-3.4.5.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-3.4.5.jar:na]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.20.Final.jar:5.4.20.Final]
+	... 17 common frames omitted
+
+2020-09-18 00:00:11.769  WARN 21436 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+    alter table employee_table_address 
+       add constraint FKil1jdv4oe61947u44if6imjep 
+       foreign key (employee_id) 
+       references employee_table (id)" via JDBC Statement
+
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
+    alter table employee_table_address 
+       add constraint FKil1jdv4oe61947u44if6imjep 
+       foreign key (employee_id) 
+       references employee_table (id)" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.4.20.Final.jar:5.4.20.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:559) [hibernate-core-5.4.20.Final.jar:5.4.20.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:504) [hibernate-core-5.4.20.Final.jar:5.4.20.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applyForeignKeys(AbstractSchemaMigrator.java:433) [hibernate-core-5.4.20.Final.jar:5.4.20.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:249) [hibernate-core-5.4.20.Final.jar:5.4.20.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:114) [hibernate-core-5.4.20.Final.jar:5.4.20.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:184) [hibernate-core-5.4.20.Final.jar:5.4.20.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73) [hibernate-core-5.4.20.Final.jar:5.4.20.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:316) [hibernate-core-5.4.20.Final.jar:5.4.20.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:469) [hibernate-core-5.4.20.Final.jar:5.4.20.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1259) [hibernate-core-5.4.20.Final.jar:5.4.20.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) [spring-orm-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) [spring-orm-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391) [spring-orm-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at java.util.concurrent.FutureTask.run(Unknown Source) ~[na:1.8.0_192]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) ~[na:1.8.0_192]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) ~[na:1.8.0_192]
+	at java.lang.Thread.run(Unknown Source) ~[na:1.8.0_192]
+Caused by: java.sql.SQLException: Failed to add the foreign key constraint. Missing index for constraint 'FKil1jdv4oe61947u44if6imjep' in the referenced table 'employee_table'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.21.jar:8.0.21]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.21.jar:8.0.21]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.21.jar:8.0.21]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764) ~[mysql-connector-java-8.0.21.jar:8.0.21]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648) ~[mysql-connector-java-8.0.21.jar:8.0.21]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95) ~[HikariCP-3.4.5.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-3.4.5.jar:na]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.20.Final.jar:5.4.20.Final]
+	... 17 common frames omitted
+
+2020-09-18 00:00:11.770  INFO 21436 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-09-18 00:00:11.783  INFO 21436 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-18 00:00:12.557  WARN 21436 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-18 00:00:13.846  INFO 21436 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-09-18 00:00:13.848  INFO 21436 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-09-18 00:00:14.095  INFO 21436 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-09-18 00:00:14.111  INFO 21436 --- [main] c.s.s.Session5AssignmentApplication      : Started Session5AssignmentApplication in 10.303 seconds (JVM running for 11.848)
+2020-09-18 00:03:50.490  INFO 21436 --- [RMI TCP Connection(12)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-09-18 00:03:51.006  INFO 21436 --- [RMI TCP Connection(12)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-09-18 00:03:51.010  INFO 21436 --- [RMI TCP Connection(12)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-18 00:03:51.010  INFO 21436 --- [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-09-18 00:03:51.045  INFO 21436 --- [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-09-18 00:14:17.907  INFO 22280 --- [main] c.s.s.Session5AssignmentApplication      : Starting Session5AssignmentApplication on LTIN144888 with PID 22280 (C:\Users\765282\Documents\workspace-spring-tool-suite-4-4.7.0.RELEASE\Session5Assignment\target\classes started by 765282 in C:\Users\765282\Documents\workspace-spring-tool-suite-4-4.7.0.RELEASE\Session5Assignment)
+2020-09-18 00:14:17.911  INFO 22280 --- [main] c.s.s.Session5AssignmentApplication      : No active profile set, falling back to default profiles: default
+2020-09-18 00:14:18.919  INFO 22280 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-18 00:14:19.017  INFO 22280 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 85ms. Found 3 JPA repository interfaces.
+2020-09-18 00:14:19.748  INFO 22280 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-09-18 00:14:19.758  INFO 22280 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-18 00:14:19.759  INFO 22280 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-18 00:14:19.900  INFO 22280 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-18 00:14:19.901  INFO 22280 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1915 ms
+2020-09-18 00:14:20.217  INFO 22280 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-18 00:14:20.280  INFO 22280 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-09-18 00:14:20.348  INFO 22280 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.20.Final
+2020-09-18 00:14:20.544  INFO 22280 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-09-18 00:14:20.726  INFO 22280 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-09-18 00:14:22.083  INFO 22280 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-09-18 00:14:22.109  INFO 22280 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-09-18 00:14:23.424  INFO 22280 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-09-18 00:14:23.434  INFO 22280 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-18 00:14:24.114  WARN 22280 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-18 00:14:24.941  INFO 22280 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-09-18 00:14:24.943  INFO 22280 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-09-18 00:14:25.096  INFO 22280 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-09-18 00:14:25.109  INFO 22280 --- [main] c.s.s.Session5AssignmentApplication      : Started Session5AssignmentApplication in 7.871 seconds (JVM running for 9.354)
+2020-09-18 00:14:36.087  INFO 22280 --- [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-18 00:14:36.087  INFO 22280 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-18 00:14:36.110  INFO 22280 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 22 ms
+2020-09-18 00:14:36.239  INFO 22280 --- [http-nio-8081-exec-2] org.dozer.config.GlobalSettings          : Trying to find Dozer configuration file: dozer.properties
+2020-09-18 00:14:36.245  WARN 22280 --- [http-nio-8081-exec-2] org.dozer.config.GlobalSettings          : Dozer configuration file not found: dozer.properties.  Using defaults for all Dozer global properties.
+2020-09-18 00:14:36.248  INFO 22280 --- [http-nio-8081-exec-2] org.dozer.DozerInitializer               : Initializing Dozer. Version: 5.5.0, Thread Name: http-nio-8081-exec-2
+2020-09-18 00:14:36.251  INFO 22280 --- [http-nio-8081-exec-2] org.dozer.jmx.JMXPlatformImpl            : Dozer JMX MBean [org.dozer.jmx:type=DozerStatisticsController] auto registered with the Platform MBean Server
+2020-09-18 00:14:36.252  INFO 22280 --- [http-nio-8081-exec-2] org.dozer.jmx.JMXPlatformImpl            : Dozer JMX MBean [org.dozer.jmx:type=DozerAdminController] auto registered with the Platform MBean Server
+2020-09-18 00:14:36.252  INFO 22280 --- [http-nio-8081-exec-2] org.dozer.DozerBeanMapper                : Initializing a new instance of dozer bean mapper.
+2020-09-18 00:14:36.643  INFO 22280 --- [http-nio-8081-exec-2] org.dozer.DozerBeanMapper                : Initializing a new instance of dozer bean mapper.
+2020-09-18 00:17:15.117  INFO 22280 --- [RMI TCP Connection(12)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-09-18 00:17:15.522  INFO 22280 --- [RMI TCP Connection(12)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-09-18 00:17:15.526  INFO 22280 --- [RMI TCP Connection(12)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-18 00:17:15.527  INFO 22280 --- [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-09-18 00:17:15.555  INFO 22280 --- [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-09-18 00:42:25.742  INFO 1468 --- [main] c.s.s.Session5AssignmentApplication      : Starting Session5AssignmentApplication on LTIN144888 with PID 1468 (C:\Users\765282\Documents\workspace-spring-tool-suite-4-4.7.0.RELEASE\Session5Assignment\target\classes started by 765282 in C:\Users\765282\Documents\workspace-spring-tool-suite-4-4.7.0.RELEASE\Session5Assignment)
+2020-09-18 00:42:25.745  INFO 1468 --- [main] c.s.s.Session5AssignmentApplication      : No active profile set, falling back to default profiles: default
+2020-09-18 00:42:26.454  INFO 1468 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-18 00:42:26.522  INFO 1468 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60ms. Found 3 JPA repository interfaces.
+2020-09-18 00:42:27.074  INFO 1468 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-09-18 00:42:27.082  INFO 1468 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-18 00:42:27.082  INFO 1468 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-18 00:42:27.181  INFO 1468 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-18 00:42:27.181  INFO 1468 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1394 ms
+2020-09-18 00:42:27.420  INFO 1468 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-18 00:42:27.467  INFO 1468 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-09-18 00:42:27.518  INFO 1468 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.20.Final
+2020-09-18 00:42:27.669  INFO 1468 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-09-18 00:42:27.777  INFO 1468 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-09-18 00:42:28.532  INFO 1468 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-09-18 00:42:28.568  INFO 1468 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-09-18 00:42:29.764  INFO 1468 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-09-18 00:42:29.774  INFO 1468 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-18 00:42:30.236  WARN 1468 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-18 00:42:30.796  INFO 1468 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-09-18 00:42:30.798  INFO 1468 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-09-18 00:42:30.912  INFO 1468 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-09-18 00:42:30.919  INFO 1468 --- [main] c.s.s.Session5AssignmentApplication      : Started Session5AssignmentApplication in 5.585 seconds (JVM running for 6.515)
+2020-09-18 00:42:43.831  INFO 1468 --- [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-18 00:42:43.831  INFO 1468 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-18 00:42:43.852  INFO 1468 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 21 ms
+2020-09-18 00:42:43.872  WARN 1468 --- [http-nio-8081-exec-2] o.s.web.servlet.PageNotFound             : Request method 'GET' not supported
+2020-09-18 00:43:14.186  INFO 1468 --- [http-nio-8081-exec-3] org.dozer.config.GlobalSettings          : Trying to find Dozer configuration file: dozer.properties
+2020-09-18 00:43:14.192  WARN 1468 --- [http-nio-8081-exec-3] org.dozer.config.GlobalSettings          : Dozer configuration file not found: dozer.properties.  Using defaults for all Dozer global properties.
+2020-09-18 00:43:14.194  INFO 1468 --- [http-nio-8081-exec-3] org.dozer.DozerInitializer               : Initializing Dozer. Version: 5.5.0, Thread Name: http-nio-8081-exec-3
+2020-09-18 00:43:14.196  INFO 1468 --- [http-nio-8081-exec-3] org.dozer.jmx.JMXPlatformImpl            : Dozer JMX MBean [org.dozer.jmx:type=DozerStatisticsController] auto registered with the Platform MBean Server
+2020-09-18 00:43:14.197  INFO 1468 --- [http-nio-8081-exec-3] org.dozer.jmx.JMXPlatformImpl            : Dozer JMX MBean [org.dozer.jmx:type=DozerAdminController] auto registered with the Platform MBean Server
+2020-09-18 00:43:14.198  INFO 1468 --- [http-nio-8081-exec-3] org.dozer.DozerBeanMapper                : Initializing a new instance of dozer bean mapper.
+2020-09-18 00:45:35.634  INFO 1468 --- [http-nio-8081-exec-6] org.dozer.DozerBeanMapper                : Initializing a new instance of dozer bean mapper.
+2020-09-18 00:45:35.738  INFO 1468 --- [http-nio-8081-exec-6] org.dozer.DozerBeanMapper                : Initializing a new instance of dozer bean mapper.
+2020-09-18 00:45:45.315  INFO 1468 --- [http-nio-8081-exec-8] org.dozer.DozerBeanMapper                : Initializing a new instance of dozer bean mapper.
+2020-09-18 00:47:15.650  INFO 1468 --- [http-nio-8081-exec-10] org.dozer.DozerBeanMapper                : Initializing a new instance of dozer bean mapper.
+2020-09-18 00:47:15.677  INFO 1468 --- [http-nio-8081-exec-10] org.dozer.DozerBeanMapper                : Initializing a new instance of dozer bean mapper.
+2020-09-18 00:47:25.606  INFO 1468 --- [http-nio-8081-exec-1] org.dozer.DozerBeanMapper                : Initializing a new instance of dozer bean mapper.
+2020-09-18 00:49:16.336  WARN 1468 --- [http-nio-8081-exec-4] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2020-09-18 00:49:27.800  INFO 1468 --- [http-nio-8081-exec-5] org.dozer.DozerBeanMapper                : Initializing a new instance of dozer bean mapper.
+2020-09-18 00:49:27.829  INFO 1468 --- [http-nio-8081-exec-5] org.dozer.DozerBeanMapper                : Initializing a new instance of dozer bean mapper.
+2020-09-18 00:49:39.931  INFO 1468 --- [http-nio-8081-exec-6] org.dozer.DozerBeanMapper                : Initializing a new instance of dozer bean mapper.
+2020-09-18 00:51:36.991  INFO 1468 --- [http-nio-8081-exec-9] org.dozer.DozerBeanMapper                : Initializing a new instance of dozer bean mapper.
+2020-09-18 00:52:16.795  INFO 1468 --- [http-nio-8081-exec-3] org.dozer.DozerBeanMapper                : Initializing a new instance of dozer bean mapper.
+2020-09-18 01:30:40.047  INFO 1468 --- [RMI TCP Connection(55)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-09-18 01:30:40.590  INFO 1468 --- [RMI TCP Connection(55)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-09-18 01:30:40.594  INFO 1468 --- [RMI TCP Connection(55)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-18 01:30:40.595  INFO 1468 --- [RMI TCP Connection(55)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-09-18 01:30:40.635  INFO 1468 --- [RMI TCP Connection(55)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-09-18 01:51:38.686  INFO 6864 --- [main] c.s.s.Session5AssignmentApplication      : Starting Session5AssignmentApplication on LTIN144888 with PID 6864 (C:\Users\765282\Documents\workspace-spring-tool-suite-4-4.7.0.RELEASE\Session5Assignment\target\classes started by 765282 in C:\Users\765282\Documents\workspace-spring-tool-suite-4-4.7.0.RELEASE\Session5Assignment)
+2020-09-18 01:51:38.691  INFO 6864 --- [main] c.s.s.Session5AssignmentApplication      : No active profile set, falling back to default profiles: default
+2020-09-18 01:51:39.435  INFO 6864 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-18 01:51:39.507  INFO 6864 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64ms. Found 3 JPA repository interfaces.
+2020-09-18 01:51:40.040  INFO 6864 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-09-18 01:51:40.047  INFO 6864 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-18 01:51:40.048  INFO 6864 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-18 01:51:40.146  INFO 6864 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-18 01:51:40.147  INFO 6864 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1405 ms
+2020-09-18 01:51:40.417  INFO 6864 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-18 01:51:40.482  INFO 6864 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-09-18 01:51:40.542  INFO 6864 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.20.Final
+2020-09-18 01:51:40.704  INFO 6864 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-09-18 01:51:40.803  INFO 6864 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-09-18 01:51:41.559  INFO 6864 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-09-18 01:51:41.578  INFO 6864 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-09-18 01:51:42.424  INFO 6864 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-09-18 01:51:42.438  INFO 6864 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-18 01:51:43.166  WARN 6864 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-18 01:51:43.700  INFO 6864 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-09-18 01:51:43.701  INFO 6864 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-09-18 01:51:43.825  INFO 6864 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-09-18 01:51:43.833  INFO 6864 --- [main] c.s.s.Session5AssignmentApplication      : Started Session5AssignmentApplication in 5.543 seconds (JVM running for 6.493)
+2020-09-18 01:51:54.749  INFO 6864 --- [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-18 01:51:54.749  INFO 6864 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-18 01:51:54.771  INFO 6864 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 22 ms
+2020-09-18 01:51:54.875  INFO 6864 --- [http-nio-8081-exec-2] org.dozer.config.GlobalSettings          : Trying to find Dozer configuration file: dozer.properties
+2020-09-18 01:51:54.880  WARN 6864 --- [http-nio-8081-exec-2] org.dozer.config.GlobalSettings          : Dozer configuration file not found: dozer.properties.  Using defaults for all Dozer global properties.
+2020-09-18 01:51:54.881  INFO 6864 --- [http-nio-8081-exec-2] org.dozer.DozerInitializer               : Initializing Dozer. Version: 5.5.0, Thread Name: http-nio-8081-exec-2
+2020-09-18 01:51:54.884  INFO 6864 --- [http-nio-8081-exec-2] org.dozer.jmx.JMXPlatformImpl            : Dozer JMX MBean [org.dozer.jmx:type=DozerStatisticsController] auto registered with the Platform MBean Server
+2020-09-18 01:51:54.884  INFO 6864 --- [http-nio-8081-exec-2] org.dozer.jmx.JMXPlatformImpl            : Dozer JMX MBean [org.dozer.jmx:type=DozerAdminController] auto registered with the Platform MBean Server
+2020-09-18 01:51:54.885  INFO 6864 --- [http-nio-8081-exec-2] org.dozer.DozerBeanMapper                : Initializing a new instance of dozer bean mapper.
+2020-09-18 01:52:31.789  INFO 6864 --- [RMI TCP Connection(9)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-09-18 01:52:32.123  INFO 6864 --- [RMI TCP Connection(9)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-09-18 01:52:32.125  INFO 6864 --- [RMI TCP Connection(9)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-18 01:52:32.126  INFO 6864 --- [RMI TCP Connection(9)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-09-18 01:52:32.142  INFO 6864 --- [RMI TCP Connection(9)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
