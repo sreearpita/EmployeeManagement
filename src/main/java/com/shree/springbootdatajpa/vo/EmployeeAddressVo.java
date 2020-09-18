@@ -16,7 +16,7 @@ this class creates a VO object for Employee Address
 @NoArgsConstructor
 public class EmployeeAddressVo {
 	
-	private int id;
+	//private int id;
     private int apartmentNumber;
 //    private String city;
 //    private int pincode;

@@ -27,7 +27,7 @@ import com.shree.springbootdatajpa.vo.EmployeeVo;
 
 @Slf4j
 @Service
-public class EmployeeManagementService implements EmployeeManagementServiceInterface{
+public class EmployeeManagementService implements EmployeeManagementServiceInterface {
 
 	@Autowired
 	private EmployeeManagementDao employeeManagementDao;
@@ -35,27 +35,30 @@ public class EmployeeManagementService implements EmployeeManagementServiceInter
 	private EmployeeManagementAddressDao employeeManagementAddressDao;
 	@Autowired
 	private EmployeeManagementIdentityDao employeeManagementIdentityDao;
+	
+	DozerBeanMapper mapper = new DozerBeanMapper();
 
-	 /**
-     * This method is used to create a employee
-     *
-     * @param employeeManagementVO
-     */
+	/**
+	 * This method is used to create a employee
+	 *
+	 * @param employeeVo
+	 * 
+	 */
 	public Employee createEmployee(EmployeeVo employeeVo) {
 
 		log.debug("emp before saving" + employeeVo + " address list: " + employeeVo.getAddress());
-		
+
 		List<EmployeeAddress> employeeAddressList = new ArrayList<>();
 		employeeVo.getAddress().stream().forEach(employeeAddressVo -> {
-			EmployeeAddress employeeAddress = callMapper().map(employeeAddressVo, EmployeeAddress.class);
+			EmployeeAddress employeeAddress = mapper.map(employeeAddressVo, EmployeeAddress.class);
 			employeeAddressList.add(employeeAddress);
 		});
 		employeeManagementAddressDao.saveAll(employeeAddressList);
 		log.debug("received address dao obj after save in database" + employeeAddressList);
-		EmployeeIdentity empIdentity = callMapper().map(employeeVo.getIdentity(), EmployeeIdentity.class);
+		EmployeeIdentity empIdentity = mapper.map(employeeVo.getIdentity(), EmployeeIdentity.class);
 		employeeManagementIdentityDao.save(empIdentity);
 
-		Employee emp = callMapper().map(employeeVo, Employee.class);
+		Employee emp = mapper.map(employeeVo, Employee.class);
 		emp.setAddress(employeeAddressList);
 		emp.setIdentity(empIdentity);
 		employeeManagementDao.save(emp);
@@ -65,44 +68,49 @@ public class EmployeeManagementService implements EmployeeManagementServiceInter
 	}
 
 	/**
-     * This method is used to get the employee detail by their id
-     *
-     * @param id
-     * @return EmployeeVo
-	 * @throws EmployeeNotFound 
-     */
+	 * this method gets all employees by a given id
+	 * 
+	 * @param id
+	 * @return
+	 * 
+	 */
 	public EmployeeVo getEmployeeById(int id) throws EmployeeNotFound {
-
-		Employee empDao = employeeManagementDao.findById(id);
-		if(empDao==null) {
+		Employee employee = employeeManagementDao.findById(id);
+		if (employee == null) {
 			throw new EmployeeNotFound(id);
+		}else {
+		EmployeeVo employeeVo = mapper.map(employee, EmployeeVo.class);
+		return employeeVo;
 		}
-		EmployeeVo empVo = callMapper().map(empDao, EmployeeVo.class);
-		return empVo;			
 	}
 
 	/**
-     * This method is used to get the employee details of all the employees
-     *
-     * @return
-     */
+	 * this method gets details of all employees
+	 * 
+	 *
+	 * @return
+	 * 
+	 */
 	public List<EmployeeVo> findAllEmp() {
 		List<Employee> employees = employeeManagementDao.findAll();
-		List<EmployeeVo> employeeVos = callMapper().map(employees, List.class);
+		List<EmployeeVo> employeeVos = mapper.map(employees, List.class);
 		return employeeVos;
 	}
 
-//	public List<EmployeeVo> getEmployeeByName(String name) throws EmployeeNotFound {
-//
-//		List<Employee> empDao = employeeManagementDao.findByName(name);
-//		DozerBeanMapper mapper = new DozerBeanMapper();
-//		EmployeeVo empVo = mapper.map(empDao, EmployeeVo.class);
-//		return empVo;
-//	}
-	
-	public  DozerBeanMapper callMapper() {
-		DozerBeanMapper mapper = new DozerBeanMapper();
-		return mapper;
+	/**
+	 * this method gets all employees by a given name
+	 * 
+	 * @param name
+	 * @return
+	 * 
+	 */
+	public List<EmployeeVo> getEmployeeByName(String name) {
+		List<Employee> emps = employeeManagementDao.findByName(name);
+		List<EmployeeVo> empVos = mapper.map(emps, List.class);
+//		if (emps == null) {
+//			throw new NoDataFound(name);
+//		}
+		return empVos;
 	}
 
 }

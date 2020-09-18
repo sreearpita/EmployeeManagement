@@ -11,7 +11,7 @@ this class creates a VO object for Employee Identity
 @NoArgsConstructor
 public class EmployeeIdentityVo {
 	
-	private int id;
+	//private int id;
 	private String IdType;
 
 }
