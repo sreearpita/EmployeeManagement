@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Optional;
 
 import org.dozer.DozerBeanMapper;
-import org.dozer.Mapper;
+import org.hibernate.boot.model.source.internal.hbm.Helper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
@@ -35,8 +35,10 @@ public class EmployeeManagementService implements EmployeeManagementServiceInter
 	private EmployeeManagementAddressDao employeeManagementAddressDao;
 	@Autowired
 	private EmployeeManagementIdentityDao employeeManagementIdentityDao;
-	
-	DozerBeanMapper mapper = new DozerBeanMapper();
+	@Autowired
+	private DozerBeanMapper mapper;
+
+	// DozerBeanMapper mapper = new DozerBeanMapper();
 
 	/**
 	 * This method is used to create a employee
@@ -46,10 +48,10 @@ public class EmployeeManagementService implements EmployeeManagementServiceInter
 	 */
 	public Employee createEmployee(EmployeeVo employeeVo) {
 
-		log.debug("emp before saving" + employeeVo + " address list: " + employeeVo.getAddress());
+		log.debug("emp before saving" + employeeVo + " address list: " + employeeVo.getAddressDetail());
 
 		List<EmployeeAddress> employeeAddressList = new ArrayList<>();
-		employeeVo.getAddress().stream().forEach(employeeAddressVo -> {
+		employeeVo.getAddressDetail().stream().forEach(employeeAddressVo -> {
 			EmployeeAddress employeeAddress = mapper.map(employeeAddressVo, EmployeeAddress.class);
 			employeeAddressList.add(employeeAddress);
 		});
@@ -61,9 +63,12 @@ public class EmployeeManagementService implements EmployeeManagementServiceInter
 		Employee emp = mapper.map(employeeVo, Employee.class);
 		emp.setAddress(employeeAddressList);
 		emp.setIdentity(empIdentity);
-		employeeManagementDao.save(emp);
+		Employee result = employeeManagementDao.save(emp);
 		log.debug("emp value" + emp);
-		return emp;
+		return result;
+		/*
+		 * if (result !=null) { return 1;} else { return 0; }
+		 */
 
 	}
 
@@ -78,9 +83,9 @@ public class EmployeeManagementService implements EmployeeManagementServiceInter
 		Employee employee = employeeManagementDao.findById(id);
 		if (employee == null) {
 			throw new EmployeeNotFound(id);
-		}else {
-		EmployeeVo employeeVo = mapper.map(employee, EmployeeVo.class);
-		return employeeVo;
+		} else {
+			EmployeeVo employeeVo = mapper.map(employee, EmployeeVo.class);
+			return employeeVo;
 		}
 	}
 

@@ -12,6 +12,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
+import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 import lombok.AllArgsConstructor;
@@ -32,7 +33,8 @@ this class creates a entity for employee
 public class Employee {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "sequence-generator")
+	@SequenceGenerator(name = "sequence-generator", sequenceName = "employee_sequence", allocationSize = 1, initialValue = 1)
 	@Column(name = "id")
 	private int id;
 	private String name;

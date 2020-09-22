@@ -34,10 +34,10 @@ public class EmployeeManagementController {
 	 */
 	@PostMapping("/")
 	public String createEmployee(@RequestBody EmployeeVo employeeVo) {
-		log.debug("controller address obj ", employeeVo.getAddress());
+		log.debug("controller address obj ", employeeVo.getAddressDetail());
 		log.debug("controller full emp obj ", employeeVo);
 		empService.createEmployee(employeeVo);
-		return employeeVo.getName();
+		return employeeVo.getFullName();
 	}
 
 	/**
