@@ -16,6 +16,7 @@ this class creates a entity for Employee Identity
 */
 
 @Data
+@AllArgsConstructor
 @NoArgsConstructor
 @Entity(name="EmployeeIdentity")
 @Table(name="employee_identity")

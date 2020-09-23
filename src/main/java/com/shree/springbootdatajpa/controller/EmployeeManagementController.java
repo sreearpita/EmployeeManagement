@@ -5,6 +5,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort.Direction;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -33,11 +35,12 @@ public class EmployeeManagementController {
 	 * @param employeeVo
 	 */
 	@PostMapping("/")
-	public String createEmployee(@RequestBody EmployeeVo employeeVo) {
+	public ResponseEntity<Integer> createEmployee(@RequestBody EmployeeVo employeeVo) {
 		log.debug("controller address obj ", employeeVo.getAddressDetail());
 		log.debug("controller full emp obj ", employeeVo);
-		empService.createEmployee(employeeVo);
-		return employeeVo.getFullName();
+		int emp=empService.createEmployee(employeeVo);
+		//return employeeVo.getFullName();
+		return new ResponseEntity<>(emp,HttpStatus.CREATED);
 	}
 
 	/**
@@ -48,8 +51,9 @@ public class EmployeeManagementController {
 	 * @throws EmployeeNotFoundException
 	 */
 	@GetMapping("/{id}")
-	public EmployeeVo getEmployeeById(@PathVariable("id") int id) throws Exception{
-		return empService.getEmployeeById(id);
+	public ResponseEntity<EmployeeVo> getEmployeeById(@PathVariable("id") int id) throws Exception{
+		//return empService.getEmployeeById(id);
+		return new ResponseEntity<>(empService.getEmployeeById(id), HttpStatus.OK);
 	}
 
 	/**
@@ -58,8 +62,9 @@ public class EmployeeManagementController {
 	 * @return
 	 */
 	@GetMapping("/vo")
-	public List<EmployeeVo> getAllEmp() {
-		return empService.findAllEmp();
+	public ResponseEntity<List<EmployeeVo>> getAllEmp() {
+		//return empService.findAllEmp();
+		return new ResponseEntity<>(empService.findAllEmp(), HttpStatus.OK);
 	}
 
 	/**
@@ -69,7 +74,7 @@ public class EmployeeManagementController {
 	 * @throws NoDataFound
 	 */
 	@GetMapping("employee/{name}")
-	public List<EmployeeVo> getEmpbyName(@PathVariable("name") String name) {
+	public EmployeeVo getEmpbyName(@PathVariable("name") String name) {
 		return empService.getEmployeeByName(name);
 	}
 

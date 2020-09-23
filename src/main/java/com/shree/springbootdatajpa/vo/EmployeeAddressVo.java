@@ -17,10 +17,10 @@ this class creates a VO object for Employee Address
 @AllArgsConstructor
 @NoArgsConstructor
 public class EmployeeAddressVo {
-	
+
 	private int id;
-	@Mapping("apartmentNumber")
-    private int flatNumber;
+//  @Mapping("apartmentNumber")
+	private int apartmentNumber;
 //    private String city;
 //    private int pincode;
 

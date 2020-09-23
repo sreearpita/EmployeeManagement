@@ -46,7 +46,7 @@ public class EmployeeManagementService implements EmployeeManagementServiceInter
 	 * @param employeeVo
 	 * 
 	 */
-	public Employee createEmployee(EmployeeVo employeeVo) {
+	public int createEmployee(EmployeeVo employeeVo) {
 
 		log.debug("emp before saving" + employeeVo + " address list: " + employeeVo.getAddressDetail());
 
@@ -65,10 +65,13 @@ public class EmployeeManagementService implements EmployeeManagementServiceInter
 		emp.setIdentity(empIdentity);
 		Employee result = employeeManagementDao.save(emp);
 		log.debug("emp value" + emp);
-		return result;
-		/*
-		 * if (result !=null) { return 1;} else { return 0; }
-		 */
+		// return result;
+
+		if (result != null) {
+			return 1;
+		} else {
+			return 0;
+		}
 
 	}
 
@@ -97,9 +100,13 @@ public class EmployeeManagementService implements EmployeeManagementServiceInter
 	 * 
 	 */
 	public List<EmployeeVo> findAllEmp() {
-		List<Employee> employees = employeeManagementDao.findAll();
-		List<EmployeeVo> employeeVos = mapper.map(employees, List.class);
-		return employeeVos;
+		List<Employee> employeeManagementModels = employeeManagementDao.findAll();
+		List<EmployeeVo> employeeManagementVOS = new ArrayList<>();
+		employeeManagementModels.stream().forEach(employeeManagementModel -> {
+			EmployeeVo employeeManagementVO = mapper.map(employeeManagementModel, EmployeeVo.class);
+			employeeManagementVOS.add(employeeManagementVO);
+		});
+		return employeeManagementVOS;
 	}
 
 	/**
@@ -109,9 +116,9 @@ public class EmployeeManagementService implements EmployeeManagementServiceInter
 	 * @return
 	 * 
 	 */
-	public List<EmployeeVo> getEmployeeByName(String name) {
-		List<Employee> emps = employeeManagementDao.findByName(name);
-		List<EmployeeVo> empVos = mapper.map(emps, List.class);
+	public EmployeeVo getEmployeeByName(String name) {
+		Employee emp = employeeManagementDao.findByName(name);
+		EmployeeVo empVos = mapper.map(emp, EmployeeVo.class);
 //		if (emps == null) {
 //			throw new NoDataFound(name);
 //		}

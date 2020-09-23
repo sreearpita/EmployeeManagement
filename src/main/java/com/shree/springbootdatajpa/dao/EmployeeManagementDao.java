@@ -9,5 +9,6 @@ import com.shree.springbootdatajpa.entities.Employee;
 public interface EmployeeManagementDao extends JpaRepository<Employee, Integer> {
 
 	Employee findById(int id);
-	List<Employee> findByName(String name);
+	//List<Employee> findByName(String name);
+	Employee findByName(String name);
 }
