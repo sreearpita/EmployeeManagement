@@ -1378,3 +1378,308 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
 	... 58 common frames omitted
 
+2020-09-23 10:15:43.517  INFO 8488 --- [main] c.s.s.EmployeeManagementApplicationTests : Starting EmployeeManagementApplicationTests on LTIN144888 with PID 8488 (started by 765282 in C:\Users\765282\Documents\workspace-spring-tool-suite-4-4.7.0.RELEASE\Session5Assignment)
+2020-09-23 10:15:43.519  INFO 8488 --- [main] c.s.s.EmployeeManagementApplicationTests : No active profile set, falling back to default profiles: default
+2020-09-23 10:15:44.660  INFO 8488 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-23 10:15:44.954  INFO 8488 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 275ms. Found 3 JPA repository interfaces.
+2020-09-23 10:15:47.039  INFO 8488 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-23 10:15:47.193  INFO 8488 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-09-23 10:15:47.243  INFO 8488 --- [main] org.dozer.config.GlobalSettings          : Trying to find Dozer configuration file: dozer.properties
+2020-09-23 10:15:47.256  WARN 8488 --- [main] org.dozer.config.GlobalSettings          : Dozer configuration file not found: dozer.properties.  Using defaults for all Dozer global properties.
+2020-09-23 10:15:47.259  INFO 8488 --- [main] org.dozer.DozerInitializer               : Initializing Dozer. Version: 5.5.0, Thread Name: main
+2020-09-23 10:15:47.283  INFO 8488 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.20.Final
+2020-09-23 10:15:47.311  INFO 8488 --- [main] org.dozer.jmx.JMXPlatformImpl            : Dozer JMX MBean [org.dozer.jmx:type=DozerStatisticsController] auto registered with the Platform MBean Server
+2020-09-23 10:15:47.312  INFO 8488 --- [main] org.dozer.jmx.JMXPlatformImpl            : Dozer JMX MBean [org.dozer.jmx:type=DozerAdminController] auto registered with the Platform MBean Server
+2020-09-23 10:15:47.314  INFO 8488 --- [main] org.dozer.DozerBeanMapper                : Initializing a new instance of dozer bean mapper.
+2020-09-23 10:15:47.383  INFO 8488 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-09-23 10:15:48.261  INFO 8488 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-09-23 10:15:49.113  INFO 8488 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-09-23 10:15:49.196  INFO 8488 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-09-23 10:15:49.649  WARN 8488 --- [task-1] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name sequence-generator
+2020-09-23 10:15:49.651  WARN 8488 --- [task-1] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name sequence-generator
+2020-09-23 10:15:50.281  INFO 8488 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-09-23 10:15:50.292  INFO 8488 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-23 10:15:51.782  WARN 8488 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-23 10:15:53.632  INFO 8488 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-09-23 10:15:53.790  INFO 8488 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-09-23 10:15:53.808  INFO 8488 --- [main] c.s.s.EmployeeManagementApplicationTests : Started EmployeeManagementApplicationTests in 10.81 seconds (JVM running for 12.281)
+2020-09-23 10:15:54.224  INFO 8488 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-09-23 10:15:54.229  INFO 8488 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-23 10:15:54.230  INFO 8488 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-09-23 10:15:54.271  INFO 8488 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-09-23 10:17:25.946  INFO 11228 --- [main] c.s.s.EmployeeManagementApplicationTests : Starting EmployeeManagementApplicationTests on LTIN144888 with PID 11228 (started by 765282 in C:\Users\765282\Documents\workspace-spring-tool-suite-4-4.7.0.RELEASE\Session5Assignment)
+2020-09-23 10:17:25.948  INFO 11228 --- [main] c.s.s.EmployeeManagementApplicationTests : No active profile set, falling back to default profiles: default
+2020-09-23 10:17:26.915  INFO 11228 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-23 10:17:27.047  INFO 11228 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 117ms. Found 3 JPA repository interfaces.
+2020-09-23 10:17:28.968  INFO 11228 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-23 10:17:29.134  INFO 11228 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-09-23 10:17:29.169  INFO 11228 --- [main] org.dozer.config.GlobalSettings          : Trying to find Dozer configuration file: dozer.properties
+2020-09-23 10:17:29.177  WARN 11228 --- [main] org.dozer.config.GlobalSettings          : Dozer configuration file not found: dozer.properties.  Using defaults for all Dozer global properties.
+2020-09-23 10:17:29.179  INFO 11228 --- [main] org.dozer.DozerInitializer               : Initializing Dozer. Version: 5.5.0, Thread Name: main
+2020-09-23 10:17:29.217  INFO 11228 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.20.Final
+2020-09-23 10:17:29.235  INFO 11228 --- [main] org.dozer.jmx.JMXPlatformImpl            : Dozer JMX MBean [org.dozer.jmx:type=DozerStatisticsController] auto registered with the Platform MBean Server
+2020-09-23 10:17:29.237  INFO 11228 --- [main] org.dozer.jmx.JMXPlatformImpl            : Dozer JMX MBean [org.dozer.jmx:type=DozerAdminController] auto registered with the Platform MBean Server
+2020-09-23 10:17:29.239  INFO 11228 --- [main] org.dozer.DozerBeanMapper                : Initializing a new instance of dozer bean mapper.
+2020-09-23 10:17:29.320  INFO 11228 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-09-23 10:17:30.110  INFO 11228 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-09-23 10:17:30.907  INFO 11228 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-09-23 10:17:30.974  INFO 11228 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-09-23 10:17:31.513  WARN 11228 --- [task-1] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name sequence-generator
+2020-09-23 10:17:31.516  WARN 11228 --- [task-1] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name sequence-generator
+2020-09-23 10:17:32.124  INFO 11228 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-09-23 10:17:32.136  INFO 11228 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-23 10:17:33.196  WARN 11228 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-23 10:17:34.948  INFO 11228 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-09-23 10:17:35.076  INFO 11228 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-09-23 10:17:35.093  INFO 11228 --- [main] c.s.s.EmployeeManagementApplicationTests : Started EmployeeManagementApplicationTests in 9.644 seconds (JVM running for 11.074)
+2020-09-23 10:17:35.404  INFO 11228 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-09-23 10:17:35.408  INFO 11228 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-23 10:17:35.410  INFO 11228 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-09-23 10:17:35.446  INFO 11228 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-09-23 10:18:40.065  INFO 14256 --- [main] c.s.s.EmployeeManagementApplicationTests : Starting EmployeeManagementApplicationTests on LTIN144888 with PID 14256 (started by 765282 in C:\Users\765282\Documents\workspace-spring-tool-suite-4-4.7.0.RELEASE\Session5Assignment)
+2020-09-23 10:18:40.067  INFO 14256 --- [main] c.s.s.EmployeeManagementApplicationTests : No active profile set, falling back to default profiles: default
+2020-09-23 10:18:41.052  INFO 14256 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-23 10:18:41.202  INFO 14256 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 135ms. Found 3 JPA repository interfaces.
+2020-09-23 10:18:43.176  INFO 14256 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-23 10:18:43.387  INFO 14256 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-09-23 10:18:43.449  INFO 14256 --- [main] org.dozer.config.GlobalSettings          : Trying to find Dozer configuration file: dozer.properties
+2020-09-23 10:18:43.458  WARN 14256 --- [main] org.dozer.config.GlobalSettings          : Dozer configuration file not found: dozer.properties.  Using defaults for all Dozer global properties.
+2020-09-23 10:18:43.462  INFO 14256 --- [main] org.dozer.DozerInitializer               : Initializing Dozer. Version: 5.5.0, Thread Name: main
+2020-09-23 10:18:43.514  INFO 14256 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.20.Final
+2020-09-23 10:18:43.531  INFO 14256 --- [main] org.dozer.jmx.JMXPlatformImpl            : Dozer JMX MBean [org.dozer.jmx:type=DozerStatisticsController] auto registered with the Platform MBean Server
+2020-09-23 10:18:43.533  INFO 14256 --- [main] org.dozer.jmx.JMXPlatformImpl            : Dozer JMX MBean [org.dozer.jmx:type=DozerAdminController] auto registered with the Platform MBean Server
+2020-09-23 10:18:43.536  INFO 14256 --- [main] org.dozer.DozerBeanMapper                : Initializing a new instance of dozer bean mapper.
+2020-09-23 10:18:43.646  INFO 14256 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-09-23 10:18:44.408  INFO 14256 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-09-23 10:18:45.213  INFO 14256 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-09-23 10:18:45.280  INFO 14256 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-09-23 10:18:45.893  WARN 14256 --- [task-1] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name sequence-generator
+2020-09-23 10:18:45.895  WARN 14256 --- [task-1] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name sequence-generator
+2020-09-23 10:18:46.647  INFO 14256 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-09-23 10:18:46.660  INFO 14256 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-23 10:18:48.357  WARN 14256 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-23 10:18:50.181  INFO 14256 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-09-23 10:18:50.300  INFO 14256 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-09-23 10:18:50.313  INFO 14256 --- [main] c.s.s.EmployeeManagementApplicationTests : Started EmployeeManagementApplicationTests in 10.832 seconds (JVM running for 12.318)
+2020-09-23 10:18:50.628  INFO 14256 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-09-23 10:18:50.632  INFO 14256 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-23 10:18:50.633  INFO 14256 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-09-23 10:18:50.676  INFO 14256 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-09-23 10:21:02.934  INFO 14300 --- [main] c.s.s.EmployeeManagementApplicationTests : Starting EmployeeManagementApplicationTests on LTIN144888 with PID 14300 (started by 765282 in C:\Users\765282\Documents\workspace-spring-tool-suite-4-4.7.0.RELEASE\Session5Assignment)
+2020-09-23 10:21:02.936  INFO 14300 --- [main] c.s.s.EmployeeManagementApplicationTests : No active profile set, falling back to default profiles: default
+2020-09-23 10:21:04.106  INFO 14300 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-23 10:21:04.350  INFO 14300 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 217ms. Found 3 JPA repository interfaces.
+2020-09-23 10:21:06.266  INFO 14300 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-23 10:21:06.421  INFO 14300 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-09-23 10:21:06.460  INFO 14300 --- [main] org.dozer.config.GlobalSettings          : Trying to find Dozer configuration file: dozer.properties
+2020-09-23 10:21:06.466  WARN 14300 --- [main] org.dozer.config.GlobalSettings          : Dozer configuration file not found: dozer.properties.  Using defaults for all Dozer global properties.
+2020-09-23 10:21:06.469  INFO 14300 --- [main] org.dozer.DozerInitializer               : Initializing Dozer. Version: 5.5.0, Thread Name: main
+2020-09-23 10:21:06.501  INFO 14300 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.20.Final
+2020-09-23 10:21:06.519  INFO 14300 --- [main] org.dozer.jmx.JMXPlatformImpl            : Dozer JMX MBean [org.dozer.jmx:type=DozerStatisticsController] auto registered with the Platform MBean Server
+2020-09-23 10:21:06.520  INFO 14300 --- [main] org.dozer.jmx.JMXPlatformImpl            : Dozer JMX MBean [org.dozer.jmx:type=DozerAdminController] auto registered with the Platform MBean Server
+2020-09-23 10:21:06.521  INFO 14300 --- [main] org.dozer.DozerBeanMapper                : Initializing a new instance of dozer bean mapper.
+2020-09-23 10:21:06.594  INFO 14300 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-09-23 10:21:07.347  INFO 14300 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-09-23 10:21:08.219  INFO 14300 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-09-23 10:21:08.282  INFO 14300 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-09-23 10:21:08.725  WARN 14300 --- [task-1] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name sequence-generator
+2020-09-23 10:21:08.728  WARN 14300 --- [task-1] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name sequence-generator
+2020-09-23 10:21:09.301  INFO 14300 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-09-23 10:21:09.315  INFO 14300 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-23 10:21:10.548  WARN 14300 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-23 10:21:12.128  INFO 14300 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-09-23 10:21:12.269  INFO 14300 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-09-23 10:21:12.284  INFO 14300 --- [main] c.s.s.EmployeeManagementApplicationTests : Started EmployeeManagementApplicationTests in 9.805 seconds (JVM running for 11.238)
+2020-09-23 10:21:12.340  INFO 14300 --- [main] org.dozer.DozerBeanMapper                : Initializing a new instance of dozer bean mapper.
+2020-09-23 10:21:12.585  INFO 14300 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-09-23 10:21:12.589  INFO 14300 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-23 10:21:12.590  INFO 14300 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-09-23 10:21:12.627  INFO 14300 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-09-23 10:54:56.071  INFO 15128 --- [main] c.s.s.EmployeeManagementApplicationTests : Starting EmployeeManagementApplicationTests on LTIN144888 with PID 15128 (started by 765282 in C:\Users\765282\Documents\workspace-spring-tool-suite-4-4.7.0.RELEASE\Session5Assignment)
+2020-09-23 10:54:56.073  INFO 15128 --- [main] c.s.s.EmployeeManagementApplicationTests : No active profile set, falling back to default profiles: default
+2020-09-23 10:54:57.074  INFO 15128 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-23 10:54:57.208  INFO 15128 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 120ms. Found 3 JPA repository interfaces.
+2020-09-23 10:54:58.760  INFO 15128 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-23 10:54:58.934  INFO 15128 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-09-23 10:54:58.971  INFO 15128 --- [main] org.dozer.config.GlobalSettings          : Trying to find Dozer configuration file: dozer.properties
+2020-09-23 10:54:58.978  WARN 15128 --- [main] org.dozer.config.GlobalSettings          : Dozer configuration file not found: dozer.properties.  Using defaults for all Dozer global properties.
+2020-09-23 10:54:58.980  INFO 15128 --- [main] org.dozer.DozerInitializer               : Initializing Dozer. Version: 5.5.0, Thread Name: main
+2020-09-23 10:54:59.014  INFO 15128 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.20.Final
+2020-09-23 10:54:59.037  INFO 15128 --- [main] org.dozer.jmx.JMXPlatformImpl            : Dozer JMX MBean [org.dozer.jmx:type=DozerStatisticsController] auto registered with the Platform MBean Server
+2020-09-23 10:54:59.038  INFO 15128 --- [main] org.dozer.jmx.JMXPlatformImpl            : Dozer JMX MBean [org.dozer.jmx:type=DozerAdminController] auto registered with the Platform MBean Server
+2020-09-23 10:54:59.040  INFO 15128 --- [main] org.dozer.DozerBeanMapper                : Initializing a new instance of dozer bean mapper.
+2020-09-23 10:54:59.120  INFO 15128 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-09-23 10:54:59.857  INFO 15128 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-09-23 10:55:00.672  INFO 15128 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-09-23 10:55:00.731  INFO 15128 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-09-23 10:55:01.169  WARN 15128 --- [task-1] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name sequence-generator
+2020-09-23 10:55:01.172  WARN 15128 --- [task-1] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name sequence-generator
+2020-09-23 10:55:02.098  INFO 15128 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-09-23 10:55:02.108  INFO 15128 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-23 10:55:03.145  WARN 15128 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-23 10:55:04.578  INFO 15128 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-09-23 10:55:04.695  INFO 15128 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-09-23 10:55:04.708  INFO 15128 --- [main] c.s.s.EmployeeManagementApplicationTests : Started EmployeeManagementApplicationTests in 9.383 seconds (JVM running for 10.713)
+2020-09-23 10:55:04.824  INFO 15128 --- [main] org.dozer.DozerBeanMapper                : Initializing a new instance of dozer bean mapper.
+2020-09-23 10:55:05.023  INFO 15128 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-09-23 10:55:05.026  INFO 15128 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-23 10:55:05.027  INFO 15128 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-09-23 10:55:05.061  INFO 15128 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-09-23 10:56:28.581  INFO 5868 --- [main] c.s.s.EmployeeManagementApplicationTests : Starting EmployeeManagementApplicationTests on LTIN144888 with PID 5868 (started by 765282 in C:\Users\765282\Documents\workspace-spring-tool-suite-4-4.7.0.RELEASE\Session5Assignment)
+2020-09-23 10:56:28.583  INFO 5868 --- [main] c.s.s.EmployeeManagementApplicationTests : No active profile set, falling back to default profiles: default
+2020-09-23 10:56:29.525  INFO 5868 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-23 10:56:29.659  INFO 5868 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 121ms. Found 3 JPA repository interfaces.
+2020-09-23 10:56:31.187  INFO 5868 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-23 10:56:31.414  INFO 5868 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-09-23 10:56:31.479  INFO 5868 --- [main] org.dozer.config.GlobalSettings          : Trying to find Dozer configuration file: dozer.properties
+2020-09-23 10:56:31.492  WARN 5868 --- [main] org.dozer.config.GlobalSettings          : Dozer configuration file not found: dozer.properties.  Using defaults for all Dozer global properties.
+2020-09-23 10:56:31.496  INFO 5868 --- [main] org.dozer.DozerInitializer               : Initializing Dozer. Version: 5.5.0, Thread Name: main
+2020-09-23 10:56:31.551  INFO 5868 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.20.Final
+2020-09-23 10:56:31.585  INFO 5868 --- [main] org.dozer.jmx.JMXPlatformImpl            : Dozer JMX MBean [org.dozer.jmx:type=DozerStatisticsController] auto registered with the Platform MBean Server
+2020-09-23 10:56:31.588  INFO 5868 --- [main] org.dozer.jmx.JMXPlatformImpl            : Dozer JMX MBean [org.dozer.jmx:type=DozerAdminController] auto registered with the Platform MBean Server
+2020-09-23 10:56:31.590  INFO 5868 --- [main] org.dozer.DozerBeanMapper                : Initializing a new instance of dozer bean mapper.
+2020-09-23 10:56:31.715  INFO 5868 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-09-23 10:56:32.907  INFO 5868 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-09-23 10:56:33.842  INFO 5868 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-09-23 10:56:33.936  INFO 5868 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-09-23 10:56:34.330  WARN 5868 --- [task-1] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name sequence-generator
+2020-09-23 10:56:34.332  WARN 5868 --- [task-1] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name sequence-generator
+2020-09-23 10:56:34.903  INFO 5868 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-09-23 10:56:34.917  INFO 5868 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-23 10:56:35.848  WARN 5868 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-23 10:56:37.295  INFO 5868 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-09-23 10:56:37.468  INFO 5868 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-09-23 10:56:37.487  INFO 5868 --- [main] c.s.s.EmployeeManagementApplicationTests : Started EmployeeManagementApplicationTests in 9.358 seconds (JVM running for 10.98)
+2020-09-23 10:56:37.689  INFO 5868 --- [main] org.dozer.DozerBeanMapper                : Initializing a new instance of dozer bean mapper.
+2020-09-23 10:56:37.984  INFO 5868 --- [main] org.dozer.DozerBeanMapper                : Initializing a new instance of dozer bean mapper.
+2020-09-23 10:56:37.995 DEBUG 5868 --- [main] c.s.s.service.EmployeeManagementService  : emp before savingEmployeeVo(id=1, fullName=xyz, age=66, addressDetail=[EmployeeAddressVo(id=1, apartmentNumber=999)], identity=EmployeeIdentityVo(id=1, IdType=ab)) address list: [EmployeeAddressVo(id=1, apartmentNumber=999)]
+2020-09-23 10:56:38.257 DEBUG 5868 --- [main] c.s.s.service.EmployeeManagementService  : received address dao obj after save in database[EmployeeAddress(id=1, apartmentNumber=999)]
+2020-09-23 10:56:38.316 DEBUG 5868 --- [main] c.s.s.service.EmployeeManagementService  : emp valueEmployee(id=1, name=xyz, age=66, address=[EmployeeAddress(id=1, apartmentNumber=999)], identity=EmployeeIdentity(id=1, IdType=ab))
+2020-09-23 10:56:38.361  INFO 5868 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-09-23 10:56:38.370  INFO 5868 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-23 10:56:38.372  INFO 5868 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-09-23 10:56:38.445  INFO 5868 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-09-23 10:58:04.519  INFO 15068 --- [main] c.s.s.EmployeeManagementApplicationTests : Starting EmployeeManagementApplicationTests on LTIN144888 with PID 15068 (started by 765282 in C:\Users\765282\Documents\workspace-spring-tool-suite-4-4.7.0.RELEASE\Session5Assignment)
+2020-09-23 10:58:04.521  INFO 15068 --- [main] c.s.s.EmployeeManagementApplicationTests : No active profile set, falling back to default profiles: default
+2020-09-23 10:58:05.486  INFO 15068 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-23 10:58:05.630  INFO 15068 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 130ms. Found 3 JPA repository interfaces.
+2020-09-23 10:58:07.175  INFO 15068 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-23 10:58:07.364  INFO 15068 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-09-23 10:58:07.405  INFO 15068 --- [main] org.dozer.config.GlobalSettings          : Trying to find Dozer configuration file: dozer.properties
+2020-09-23 10:58:07.412  WARN 15068 --- [main] org.dozer.config.GlobalSettings          : Dozer configuration file not found: dozer.properties.  Using defaults for all Dozer global properties.
+2020-09-23 10:58:07.414  INFO 15068 --- [main] org.dozer.DozerInitializer               : Initializing Dozer. Version: 5.5.0, Thread Name: main
+2020-09-23 10:58:07.448  INFO 15068 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.20.Final
+2020-09-23 10:58:07.468  INFO 15068 --- [main] org.dozer.jmx.JMXPlatformImpl            : Dozer JMX MBean [org.dozer.jmx:type=DozerStatisticsController] auto registered with the Platform MBean Server
+2020-09-23 10:58:07.470  INFO 15068 --- [main] org.dozer.jmx.JMXPlatformImpl            : Dozer JMX MBean [org.dozer.jmx:type=DozerAdminController] auto registered with the Platform MBean Server
+2020-09-23 10:58:07.471  INFO 15068 --- [main] org.dozer.DozerBeanMapper                : Initializing a new instance of dozer bean mapper.
+2020-09-23 10:58:07.546  INFO 15068 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-09-23 10:58:08.380  INFO 15068 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-09-23 10:58:09.479  INFO 15068 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-09-23 10:58:09.550  INFO 15068 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-09-23 10:58:09.974  WARN 15068 --- [task-1] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name sequence-generator
+2020-09-23 10:58:09.977  WARN 15068 --- [task-1] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name sequence-generator
+2020-09-23 10:58:10.578  INFO 15068 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-09-23 10:58:10.588  INFO 15068 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-23 10:58:11.569  WARN 15068 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-23 10:58:12.893  INFO 15068 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-09-23 10:58:13.014  INFO 15068 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-09-23 10:58:13.028  INFO 15068 --- [main] c.s.s.EmployeeManagementApplicationTests : Started EmployeeManagementApplicationTests in 8.956 seconds (JVM running for 10.668)
+2020-09-23 10:58:13.161  INFO 15068 --- [main] org.dozer.DozerBeanMapper                : Initializing a new instance of dozer bean mapper.
+2020-09-23 10:58:13.346  INFO 15068 --- [main] org.dozer.DozerBeanMapper                : Initializing a new instance of dozer bean mapper.
+2020-09-23 10:58:13.382  INFO 15068 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-09-23 10:58:13.385  INFO 15068 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-23 10:58:13.386  INFO 15068 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-09-23 10:58:13.423  INFO 15068 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-09-23 10:58:40.435  INFO 9188 --- [main] c.s.s.EmployeeManagementApplicationTests : Starting EmployeeManagementApplicationTests on LTIN144888 with PID 9188 (started by 765282 in C:\Users\765282\Documents\workspace-spring-tool-suite-4-4.7.0.RELEASE\Session5Assignment)
+2020-09-23 10:58:40.438  INFO 9188 --- [main] c.s.s.EmployeeManagementApplicationTests : No active profile set, falling back to default profiles: default
+2020-09-23 10:58:41.369  INFO 9188 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-23 10:58:41.510  INFO 9188 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 125ms. Found 3 JPA repository interfaces.
+2020-09-23 10:58:43.430  INFO 9188 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-23 10:58:43.588  INFO 9188 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-09-23 10:58:43.626  INFO 9188 --- [main] org.dozer.config.GlobalSettings          : Trying to find Dozer configuration file: dozer.properties
+2020-09-23 10:58:43.632  WARN 9188 --- [main] org.dozer.config.GlobalSettings          : Dozer configuration file not found: dozer.properties.  Using defaults for all Dozer global properties.
+2020-09-23 10:58:43.634  INFO 9188 --- [main] org.dozer.DozerInitializer               : Initializing Dozer. Version: 5.5.0, Thread Name: main
+2020-09-23 10:58:43.665  INFO 9188 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.20.Final
+2020-09-23 10:58:43.682  INFO 9188 --- [main] org.dozer.jmx.JMXPlatformImpl            : Dozer JMX MBean [org.dozer.jmx:type=DozerStatisticsController] auto registered with the Platform MBean Server
+2020-09-23 10:58:43.683  INFO 9188 --- [main] org.dozer.jmx.JMXPlatformImpl            : Dozer JMX MBean [org.dozer.jmx:type=DozerAdminController] auto registered with the Platform MBean Server
+2020-09-23 10:58:43.685  INFO 9188 --- [main] org.dozer.DozerBeanMapper                : Initializing a new instance of dozer bean mapper.
+2020-09-23 10:58:43.758  INFO 9188 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-09-23 10:58:44.435  INFO 9188 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-09-23 10:58:45.211  INFO 9188 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-09-23 10:58:45.270  INFO 9188 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-09-23 10:58:45.693  WARN 9188 --- [task-1] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name sequence-generator
+2020-09-23 10:58:45.695  WARN 9188 --- [task-1] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name sequence-generator
+2020-09-23 10:58:46.334  INFO 9188 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-09-23 10:58:46.348  INFO 9188 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-23 10:58:47.522  WARN 9188 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-23 10:58:49.646  INFO 9188 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-09-23 10:58:49.782  INFO 9188 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-09-23 10:58:49.800  INFO 9188 --- [main] c.s.s.EmployeeManagementApplicationTests : Started EmployeeManagementApplicationTests in 9.875 seconds (JVM running for 11.28)
+2020-09-23 10:58:49.930  INFO 9188 --- [main] org.dozer.DozerBeanMapper                : Initializing a new instance of dozer bean mapper.
+2020-09-23 10:58:50.113  INFO 9188 --- [main] org.dozer.DozerBeanMapper                : Initializing a new instance of dozer bean mapper.
+2020-09-23 10:58:50.173  INFO 9188 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-09-23 10:58:50.177  INFO 9188 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-23 10:58:50.178  INFO 9188 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-09-23 10:58:50.234  INFO 9188 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-09-23 11:00:07.748  INFO 15320 --- [main] c.s.s.EmployeeManagementApplicationTests : Starting EmployeeManagementApplicationTests on LTIN144888 with PID 15320 (started by 765282 in C:\Users\765282\Documents\workspace-spring-tool-suite-4-4.7.0.RELEASE\Session5Assignment)
+2020-09-23 11:00:07.750  INFO 15320 --- [main] c.s.s.EmployeeManagementApplicationTests : No active profile set, falling back to default profiles: default
+2020-09-23 11:00:09.223  INFO 15320 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-23 11:00:09.357  INFO 15320 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 120ms. Found 3 JPA repository interfaces.
+2020-09-23 11:00:11.143  INFO 15320 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-23 11:00:11.333  INFO 15320 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-09-23 11:00:11.384  INFO 15320 --- [main] org.dozer.config.GlobalSettings          : Trying to find Dozer configuration file: dozer.properties
+2020-09-23 11:00:11.393  WARN 15320 --- [main] org.dozer.config.GlobalSettings          : Dozer configuration file not found: dozer.properties.  Using defaults for all Dozer global properties.
+2020-09-23 11:00:11.397  INFO 15320 --- [main] org.dozer.DozerInitializer               : Initializing Dozer. Version: 5.5.0, Thread Name: main
+2020-09-23 11:00:11.437  INFO 15320 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.20.Final
+2020-09-23 11:00:11.468  INFO 15320 --- [main] org.dozer.jmx.JMXPlatformImpl            : Dozer JMX MBean [org.dozer.jmx:type=DozerStatisticsController] auto registered with the Platform MBean Server
+2020-09-23 11:00:11.469  INFO 15320 --- [main] org.dozer.jmx.JMXPlatformImpl            : Dozer JMX MBean [org.dozer.jmx:type=DozerAdminController] auto registered with the Platform MBean Server
+2020-09-23 11:00:11.471  INFO 15320 --- [main] org.dozer.DozerBeanMapper                : Initializing a new instance of dozer bean mapper.
+2020-09-23 11:00:11.563  INFO 15320 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-09-23 11:00:12.356  INFO 15320 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-09-23 11:00:13.260  INFO 15320 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-09-23 11:00:13.348  INFO 15320 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-09-23 11:00:13.805  WARN 15320 --- [task-1] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name sequence-generator
+2020-09-23 11:00:13.806  WARN 15320 --- [task-1] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name sequence-generator
+2020-09-23 11:00:14.878  INFO 15320 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-09-23 11:00:14.891  INFO 15320 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-23 11:00:15.960  WARN 15320 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-23 11:00:17.637  INFO 15320 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-09-23 11:00:17.781  INFO 15320 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-09-23 11:00:17.797  INFO 15320 --- [main] c.s.s.EmployeeManagementApplicationTests : Started EmployeeManagementApplicationTests in 10.518 seconds (JVM running for 12.34)
+2020-09-23 11:00:17.940  INFO 15320 --- [main] org.dozer.DozerBeanMapper                : Initializing a new instance of dozer bean mapper.
+2020-09-23 11:00:18.140  INFO 15320 --- [main] org.dozer.DozerBeanMapper                : Initializing a new instance of dozer bean mapper.
+2020-09-23 11:00:18.182  INFO 15320 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-09-23 11:00:18.187  INFO 15320 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-23 11:00:18.189  INFO 15320 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-09-23 11:00:18.239  INFO 15320 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-09-23 11:00:47.255  INFO 14532 --- [main] c.s.s.EmployeeManagementApplicationTests : Starting EmployeeManagementApplicationTests on LTIN144888 with PID 14532 (started by 765282 in C:\Users\765282\Documents\workspace-spring-tool-suite-4-4.7.0.RELEASE\Session5Assignment)
+2020-09-23 11:00:47.258  INFO 14532 --- [main] c.s.s.EmployeeManagementApplicationTests : No active profile set, falling back to default profiles: default
+2020-09-23 11:00:48.610  INFO 14532 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-23 11:00:48.741  INFO 14532 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 117ms. Found 3 JPA repository interfaces.
+2020-09-23 11:00:50.382  INFO 14532 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-23 11:00:50.534  INFO 14532 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-09-23 11:00:50.573  INFO 14532 --- [main] org.dozer.config.GlobalSettings          : Trying to find Dozer configuration file: dozer.properties
+2020-09-23 11:00:50.580  WARN 14532 --- [main] org.dozer.config.GlobalSettings          : Dozer configuration file not found: dozer.properties.  Using defaults for all Dozer global properties.
+2020-09-23 11:00:50.582  INFO 14532 --- [main] org.dozer.DozerInitializer               : Initializing Dozer. Version: 5.5.0, Thread Name: main
+2020-09-23 11:00:50.615  INFO 14532 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.20.Final
+2020-09-23 11:00:50.634  INFO 14532 --- [main] org.dozer.jmx.JMXPlatformImpl            : Dozer JMX MBean [org.dozer.jmx:type=DozerStatisticsController] auto registered with the Platform MBean Server
+2020-09-23 11:00:50.636  INFO 14532 --- [main] org.dozer.jmx.JMXPlatformImpl            : Dozer JMX MBean [org.dozer.jmx:type=DozerAdminController] auto registered with the Platform MBean Server
+2020-09-23 11:00:50.638  INFO 14532 --- [main] org.dozer.DozerBeanMapper                : Initializing a new instance of dozer bean mapper.
+2020-09-23 11:00:50.734  INFO 14532 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-09-23 11:00:51.461  INFO 14532 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-09-23 11:00:52.225  INFO 14532 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-09-23 11:00:52.284  INFO 14532 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-09-23 11:00:52.705  WARN 14532 --- [task-1] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name sequence-generator
+2020-09-23 11:00:52.707  WARN 14532 --- [task-1] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name sequence-generator
+2020-09-23 11:00:53.327  INFO 14532 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-09-23 11:00:53.338  INFO 14532 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-23 11:00:54.693  WARN 14532 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-23 11:00:56.029  INFO 14532 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-09-23 11:00:56.141  INFO 14532 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-09-23 11:00:56.153  INFO 14532 --- [main] c.s.s.EmployeeManagementApplicationTests : Started EmployeeManagementApplicationTests in 9.388 seconds (JVM running for 10.848)
+2020-09-23 11:00:56.260  INFO 14532 --- [main] org.dozer.DozerBeanMapper                : Initializing a new instance of dozer bean mapper.
+2020-09-23 11:00:56.441  INFO 14532 --- [main] org.dozer.DozerBeanMapper                : Initializing a new instance of dozer bean mapper.
+2020-09-23 11:00:56.485  INFO 14532 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-09-23 11:00:56.489  INFO 14532 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-23 11:00:56.490  INFO 14532 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-09-23 11:00:56.529  INFO 14532 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
